@@ -20,17 +20,33 @@
     color:#727272;
 }
 
-.nothing{
+.bg-color{
     background-color: rgba(255, 144, 14, 0.1);
+}
+
+.primary-btn{
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: #FF900E;
+    color:#FFFFFF;
+    border: none;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600px;
 }
 
 
 /* Header Style */
 
 /* navbar style */
-
+.brand{
+    font-weight: bold;
+    font-size:3rem ;
+}
 .navbar{
     justify-content: space-between;
+    align-items: center;
 }
 .navitems{
     list-style: none;
@@ -46,4 +62,32 @@
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+/* Banner related style */
+
+
+.banner-content{
+    max-width:850px ;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+
+
+/* responsive Media Query */
+@media screen and (max-width: 576px) {
+    .navbar, .navlinks{
+        flex-direction: column;
+    }
 }
